@@ -4,16 +4,497 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Martplace</title>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <h1>Привет!</h1>
+  <header class="header">
+
+    <div class="header__top">
+
+      <div class="container">
+
+        <div class="header__inner">
+
+          <a class="header__logo" href="#">
+            <img src="images/logo.png" alt="logo">
+          </a>
+
+          <a class="button button--seller" href="#" type="button">
+            Become a Seller
+          </a>
+
+          <ul class="header__info">
+            <li>
+              <a class="header__notification" href="#">
+                <span class="lnr lnr-alarm"></span>
+                alarm
+              </a>
+            </li>
+            <li>
+              <a class="header__notification" href="#">
+                <span class="lnr lnr-envelope"></span>
+                notifications
+              </a>
+            </li>
+            <li>
+              <a class="header__notification" href="#">
+                <span class="lnr lnr-cart"></span>
+                cart
+              </a>
+            </li>
+          </ul>
+
+          <a class="user user--header" href="#">
+            <img class="user__pic user__pic--header" src="images/pics/client.jpg" alt="user-avatar">
+            <div class="user__name user__name--header">
+              Taofiq Hakim
+              <span class="user__value"><span>$</span>20.45</span>
+            </div>
+            user profile
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header__bottom">
+
+      <div class="container">
+
+        <div class="header__inner">
+
+          <nav class="header__menu menu">
+
+            <ul class="menu__list">
+
+              <li class="menu__item">
+                <!-- Класс оставляю для выпадашек -->
+                <a class="menu__link" href="#">home</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link" href="#">all products</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link" href="#">wordpress</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link" href="#">festures</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link" href="#">pages</a>
+              </li>
+
+            </ul>
+
+          </nav>
+
+          <form class="form form--header" action="#" method="get" name="search">
+            <label for="form-searh" class="form__label form__label--header">search</label>
+            <input id="form-searh" class="form__input form__input--header" placeholder="Search product here..."
+              type="search" name="search" value="">
+            <button class="button button--header" type="submit"><span class="lnr lnr-magnifier"></span>submit</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+    <section class="intro">
+
+      <div class="container">
+
+        <div class="intro__wrapper">
+
+          <div class="intro__title">
+            <span class="intro__pretitle">Create Your Own</span>
+            <span class="intro__main-title">Digital Product Marketplace</span>
+          </div>
+
+          <p class="intro__text">
+            MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+          </p>
+
+          <div class="intro__box">
+            <a class="button button--intro" href="#">View All Products</a>
+            <a class="button button--intro button--intro-mod" href="#">Popular Products</a>
+          </div>
+
+          <div class="intro__search-inner search">
+
+            <form class="search__form" action="#" method="get">
+              <label for="search-input" class="search__label">search</label>
+              <input id="search-input" class="search__input" placeholder="Search your products..." type="search"
+                name="search" value="">
+              <label for="search-select" class="search__label">search</label>
+              <select id="search-select" class="search__select" form="search">
+                <option selected disabled>All Categories</option>
+                <option class="search__category" disabled>Landings</option>
+                <option value="Jetro">Jetro</option>
+                <option value="Bis Lite">Bis Lite</option>
+                <option value="Surf">Surf</option>
+                <option class="search__category" disabled>Portals</option>
+                <option value="MartPlace">Mart Place</option>
+                <option value="Moderno">Moderno</option>
+                <option value="Mavic">Mavic</option>
+                <option class="search__category" disabled>Templates</option>
+                <option value="WordPress">WordPress</option>
+                <option value="OpenCart">OpenCart</option>
+              </select>
+              <button class="search__button" type="submit">Search Now</button>
+            </form>
+
+          </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="directions">
+
+      <div class="container">
+
+        <div class="directions__wrapper">
+
+          <div class="feature feature--directions">
+            <!-- Модификаторами по 3 класса выходит. -->
+            <div class="feature__item feature__item--directions">
+              <a class="feature__title feature__title--directions-pic1" href="#">
+                Best UX Research
+              </a>
+              <p class="feature__text feature__text--directions">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet diam congue is laoreet elit metus.
+              </p>
+            </div>
+
+            <div class="feature__item feature__item--directions">
+              <a class="feature__title feature__title--directions-pic2" href="#">
+                Fully Responsive
+              </a>
+              <p class="feature__text feature__text--directions">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet diam congue is laoreet elit metus.
+              </p>
+            </div>
+
+            <div class="feature__item feature__item--directions">
+              <a class="feature__title feature__title--directions-pic3" href="#">
+                Buy & Sell Easily
+              </a>
+              <p class="feature__text feature__text--directions">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet diam congue is laoreet elit metus.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="featured">
+
+      <div class="featured__wrapper">
+
+        <div class="container">
+
+          <div class="featured__nav">
+
+            <span class="featured__nav-title">Weekly Featured Products</span>
+
+            <div class="featured__nav-btn-box">
+              <button class="button featured__toleft"><span
+                  class="lnr lnr-chevron-left featured__arrow"></span></button>
+              <button class="button featured__toright"><span
+                  class="lnr lnr-chevron-right featured__arrow"></span></button>
+            </div>
+
+          </div>
+
+          <div class="featured__slider swiper-container">
+
+            <div class="swiper-wrapper">
+
+              <div class="featured__slider-item swiper-slide">
+
+                <article class="card featured__card">
+
+                  <a class="card__prew" href="#">
+                    <img class="card__photo" src="images/products/Jetro.jpg" alt="template">
+                  </a>
+
+                  <div class="card__info">
+
+                    <div class="card__descr">
+
+                      <span class="card__title">One Page Resume Template</span>
+
+                      <a class="user card__user" href="#">
+                        <img class="user__pic card__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name card__user-name">
+                          AazzTech
+                          <span class="card__user-work"><span class="card__user-note"
+                              style="background-image: url(images/icons/wordpress-violet.svg);"></span>WordPress</span>
+                        </div>
+                        user profile
+                      </a>
+
+                      <p class="card__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                        leo
+                        quam
+                        aliquet congue
+                        placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                        quam
+                        aliquet congue justo
+                        ut scelerisque.
+                      </p>
+
+                      <button class="button card__button">
+                        website
+                      </button>
+
+                      <button class="button card__button">
+                        plugin
+                      </button>
+
+                      <button class="button card__button">
+                        landing page
+                      </button>
+
+                    </div>
+
+                    <div class="card__param">
+
+                      <div class="card__specs">
+
+                        <a class="card__value-btn button" href="#">
+                          <span class="card__value-rate">
+                            <span>$</span>10 - <span>$</span>50
+                          </span>
+                          $10 - $50
+                        </a>
+
+                        <span class="lnr lnr-heart card__heart"><span class="card__heart-rate">46</span></span>
+
+                        <span class="lnr lnr-cart card__cart"><span class="card__cart-rate">634</span></span>
+
+                      </div>
+
+                      <div class="card__rate"></div>
+
+                    </div>
+
+
+                  </div>
+
+                </article>
+
+              </div>
+
+              <div class="featured__slider-item swiper-slide">
+
+                <article class="card featured__card">
+
+                  <a class="card__prew" href="#">
+                    <img class="card__photo" src="images/products/Jetro.jpg" alt="template">
+                  </a>
+
+                  <div class="card__info">
+
+                    <div class="card__descr">
+
+                      <span class="card__title">One Page Resume Template</span>
+
+                      <a class="user card__user" href="#">
+                        <img class="user__pic card__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name card__user-name">
+                          AazzTech
+                          <span class="card__user-work"><span class="card__user-note"
+                              style="background-image: url(images/icons/wordpress-violet.svg);"></span>WordPress</span>
+                        </div>
+                        user profile
+                      </a>
+
+                      <p class="card__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                        leo
+                        quam
+                        aliquet congue
+                        placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                        quam
+                        aliquet congue justo
+                        ut scelerisque.
+                      </p>
+
+                      <button class="button card__button">
+                        website
+                      </button>
+
+                      <button class="button card__button">
+                        plugin
+                      </button>
+
+                      <button class="button card__button">
+                        landing page
+                      </button>
+
+                    </div>
+
+                    <div class="card__param">
+
+                      <div class="card__specs">
+
+                        <a class="card__value-btn button" href="#">
+                          <span class="card__value-rate">
+                            <span>$</span>10 - <span>$</span>50
+                          </span>
+                          $10 - $50
+                        </a>
+
+                        <span class="lnr lnr-heart card__heart"><span class="card__heart-rate">46</span></span>
+
+                        <span class="lnr lnr-cart card__cart"><span class="card__cart-rate">634</span></span>
+
+                      </div>
+
+                      <div class="card__rate"></div>
+
+                    </div>
+
+
+                  </div>
+
+                </article>
+
+              </div>
+
+              <div class="featured__slider-item swiper-slide">
+
+                <article class="card featured__card">
+
+                  <a class="card__prew" href="#">
+                    <img class="card__photo" src="images/products/Jetro.jpg" alt="template">
+                  </a>
+
+                  <div class="card__info">
+
+                    <div class="card__descr">
+
+                      <span class="card__title">One Page Resume Template</span>
+
+                      <a class="user card__user" href="#">
+                        <img class="user__pic card__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name card__user-name">
+                          AazzTech
+                          <span class="card__user-work"><span class="card__user-note"
+                              style="background-image: url(images/icons/wordpress-violet.svg);"></span>WordPress</span>
+                        </div>
+                        user profile
+                      </a>
+
+                      <p class="card__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                        leo
+                        quam
+                        aliquet congue
+                        placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                        quam
+                        aliquet congue justo
+                        ut scelerisque.
+                      </p>
+
+                      <button class="button card__button">
+                        website
+                      </button>
+
+                      <button class="button card__button">
+                        plugin
+                      </button>
+
+                      <button class="button card__button">
+                        landing page
+                      </button>
+
+                    </div>
+
+                    <div class="card__param">
+
+                      <div class="card__specs">
+
+                        <a class="card__value-btn button" href="#">
+                          <span class="card__value-rate">
+                            <span>$</span>10 - <span>$</span>50
+                          </span>
+                          $10 - $50
+                        </a>
+
+                        <span class="lnr lnr-heart card__heart"><span class="card__heart-rate">46</span></span>
+
+                        <span class="lnr lnr-cart card__cart"><span class="card__cart-rate">634</span></span>
+
+                      </div>
+
+                      <div class="card__rate"></div>
+
+                    </div>
+
+
+                  </div>
+
+                </article>
+
+              </div>
+
+            </div>
+
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="space"></section>
+
+
+
+
+
+  </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
