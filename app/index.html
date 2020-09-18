@@ -22,38 +22,42 @@
 
           <a class="header__logo" href="#">
             <img src="images/logo.png" alt="logo">
+            Logo
           </a>
 
-          <a class="button button--seller" href="#" type="button">
+          <a class="button header__button" href="#" type="button">
             Become a Seller
           </a>
 
           <ul class="header__info">
             <li>
-              <a class="header__notification" href="#">
-                <span class="lnr lnr-alarm"></span>
+              <a class="header__notification lnr lnr-alarm" href="#">
                 alarm
+                <span class="header__circle header__circle--alarm">25</span>
               </a>
+
             </li>
             <li>
-              <a class="header__notification" href="#">
-                <span class="lnr lnr-envelope"></span>
+              <a class="header__notification lnr lnr-envelope" href="#">
                 notifications
+                <span class="header__circle header__circle--notifics">6</span>
               </a>
+
             </li>
             <li>
-              <a class="header__notification" href="#">
-                <span class="lnr lnr-cart"></span>
+              <a class="header__notification lnr lnr-cart" href="#">
                 cart
+                <span class="header__circle header__circle--cart">2</span>
               </a>
+
             </li>
           </ul>
 
-          <a class="user user--header" href="#">
-            <img class="user__pic user__pic--header" src="images/pics/client.jpg" alt="user-avatar">
-            <div class="user__name user__name--header">
+          <a class="user header__user" href="#">
+            <img class="user__pic header__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+            <div class="user__name header__user-name">
               Taofiq Hakim
-              <span class="user__value"><span>$</span>20.45</span>
+              <span class="header__user-value"><span>$</span>20.45</span>
             </div>
             user profile
           </a>
@@ -99,11 +103,12 @@
 
           </nav>
 
-          <form class="form form--header" action="#" method="get" name="search">
-            <label for="form-searh" class="form__label form__label--header">search</label>
-            <input id="form-searh" class="form__input form__input--header" placeholder="Search product here..."
+          <form class="form header__form" action="#" method="get" name="search">
+            <label for="form-searh" class="form__label header__form-label">search</label>
+            <input id="form-searh" class="form__input header__form-input" placeholder="Search product here..."
               type="search" name="search" value="">
-            <button class="button button--header" type="submit"><span class="lnr lnr-magnifier"></span>submit</button>
+            <button class="button header__form-btn " type="submit"><span
+                class="lnr lnr-magnifier"></span>submit</button>
           </form>
 
         </div>
@@ -124,18 +129,22 @@
 
         <div class="intro__wrapper">
 
-          <div class="intro__title">
-            <span class="intro__pretitle">Create Your Own</span>
-            <span class="intro__main-title">Digital Product Marketplace</span>
-          </div>
+          <div class="intro__main">
 
-          <p class="intro__text">
-            MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-          </p>
+            <div class="intro__title">
+              <span class="intro__pretitle">Create Your Own</span>
+              <span class="intro__main-title">Digital Product Marketplace</span>
+            </div>
 
-          <div class="intro__box">
-            <a class="button button--intro" href="#">View All Products</a>
-            <a class="button button--intro button--intro-mod" href="#">Popular Products</a>
+            <p class="intro__text">
+              MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+            </p>
+
+            <div class="intro__btn-box">
+              <a class="button intro__button" href="#">View All Products</a>
+              <a class="button intro__button intro__button--mod" href="#">Popular Products</a>
+            </div>
+
           </div>
 
           <div class="intro__search-inner search">
@@ -176,33 +185,33 @@
 
         <div class="directions__wrapper">
 
-          <div class="feature feature--directions">
+          <div class="feature directions__feature">
             <!-- Модификаторами по 3 класса выходит. -->
-            <div class="feature__item feature__item--directions">
-              <a class="feature__title feature__title--directions-pic1" href="#">
+            <div class="feature__item directions__feature-item">
+              <a class="feature__title directions__feature-title-1" href="#">
                 Best UX Research
               </a>
-              <p class="feature__text feature__text--directions">
+              <p class="feature__text directions__feature-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet diam congue is laoreet elit metus.
               </p>
             </div>
 
-            <div class="feature__item feature__item--directions">
-              <a class="feature__title feature__title--directions-pic2" href="#">
+            <div class="feature__item directions__feature-item">
+              <a class="feature__title directions__feature-title-2" href="#">
                 Fully Responsive
               </a>
-              <p class="feature__text feature__text--directions">
+              <p class="feature__text directions__feature-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet diam congue is laoreet elit metus.
               </p>
             </div>
 
-            <div class="feature__item feature__item--directions">
-              <a class="feature__title feature__title--directions-pic3" href="#">
+            <div class="feature__item directions__feature-item">
+              <a class="feature__title directions__feature-title-3" href="#">
                 Buy & Sell Easily
               </a>
-              <p class="feature__text feature__text--directions">
+              <p class="feature__text directions__feature-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet diam congue is laoreet elit metus.
               </p>
@@ -220,15 +229,15 @@
 
     <section class="featured">
 
-      <div class="featured__wrapper">
+      <div class="featured__wrapper area">
 
         <div class="container">
 
-          <div class="featured__nav">
+          <div class="featured__nav section-head">
 
-            <span class="featured__nav-title">Weekly Featured Products</span>
+            <span class="section-head__title featured__title">Weekly Featured Products</span>
 
-            <div class="featured__nav-btn-box">
+            <div class="featured__btn-box">
               <button class="button featured__toleft"><span
                   class="lnr lnr-chevron-left featured__arrow"></span></button>
               <button class="button featured__toright"><span
@@ -243,29 +252,29 @@
 
               <div class="featured__slider-item swiper-slide">
 
-                <article class="card featured__card">
+                <article class="featured__product product-slider">
 
-                  <a class="card__prew" href="#">
-                    <img class="card__photo" src="images/products/Jetro.jpg" alt="template">
+                  <a class="product-slider__prew" href="#">
+                    <img class="product-slider__photo" src="images/products/des2.jpg" alt="template">
                   </a>
 
-                  <div class="card__info">
+                  <div class="product-slider__info">
 
-                    <div class="card__descr">
+                    <div class="product-slider__descr">
 
-                      <span class="card__title">One Page Resume Template</span>
+                      <span class="product-slider__title">One Page Resume Template</span>
 
-                      <a class="user card__user" href="#">
-                        <img class="user__pic card__user-pic" src="images/pics/client.jpg" alt="user-avatar">
-                        <div class="user__name card__user-name">
+                      <a class="user product-slider__user" href="#">
+                        <img class="user__pic product-slider__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name product-slider__user-name">
                           AazzTech
-                          <span class="card__user-work"><span class="card__user-note"
+                          <span class="product-slider__user-work"><span class="product-slider__user-note"
                               style="background-image: url(images/icons/wordpress-violet.svg);"></span>WordPress</span>
                         </div>
                         user profile
                       </a>
 
-                      <p class="card__text">
+                      <p class="product-slider__text">
                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
                         leo
                         quam
@@ -276,38 +285,40 @@
                         ut scelerisque.
                       </p>
 
-                      <button class="button card__button">
+                      <button class="button product-slider__button">
                         website
                       </button>
 
-                      <button class="button card__button">
+                      <button class="button product-slider__button">
                         plugin
                       </button>
 
-                      <button class="button card__button">
+                      <button class="button product-slider__button">
                         landing page
                       </button>
 
                     </div>
 
-                    <div class="card__param">
+                    <div class="product-slider__param">
 
-                      <div class="card__specs">
+                      <div class="product-slider__specs">
 
-                        <a class="card__value-btn button" href="#">
-                          <span class="card__value-rate">
+                        <a class="product-slider__value-btn button" href="#">
+                          <span class="product-slider__value-rate">
                             <span>$</span>10 - <span>$</span>50
                           </span>
                           $10 - $50
                         </a>
 
-                        <span class="lnr lnr-heart card__heart"><span class="card__heart-rate">46</span></span>
+                        <span class="lnr lnr-heart product-slider__heart"><span
+                            class="product-slider__heart-rate">46</span></span>
 
-                        <span class="lnr lnr-cart card__cart"><span class="card__cart-rate">634</span></span>
+                        <span class="lnr lnr-cart product-slider__cart"><span
+                            class="product-slider__cart-rate">634</span></span>
 
                       </div>
 
-                      <div class="card__rate"></div>
+                      <div class="product-slider__rate"></div>
 
                     </div>
 
@@ -320,29 +331,29 @@
 
               <div class="featured__slider-item swiper-slide">
 
-                <article class="card featured__card">
+                <article class="featured__product product-slider">
 
-                  <a class="card__prew" href="#">
-                    <img class="card__photo" src="images/products/Jetro.jpg" alt="template">
+                  <a class="product-slider__prew" href="#">
+                    <img class="product-slider__photo" src="images/products/des4.jpg" alt="template">
                   </a>
 
-                  <div class="card__info">
+                  <div class="product-slider__info">
 
-                    <div class="card__descr">
+                    <div class="product-slider__descr">
 
-                      <span class="card__title">One Page Resume Template</span>
+                      <span class="product-slider__title">One Page Resume Template</span>
 
-                      <a class="user card__user" href="#">
-                        <img class="user__pic card__user-pic" src="images/pics/client.jpg" alt="user-avatar">
-                        <div class="user__name card__user-name">
+                      <a class="user product-slider__user" href="#">
+                        <img class="user__pic product-slider__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name product-slider__user-name">
                           AazzTech
-                          <span class="card__user-work"><span class="card__user-note"
+                          <span class="product-slider__user-work"><span class="product-slider__user-note"
                               style="background-image: url(images/icons/wordpress-violet.svg);"></span>WordPress</span>
                         </div>
                         user profile
                       </a>
 
-                      <p class="card__text">
+                      <p class="product-slider__text">
                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
                         leo
                         quam
@@ -353,38 +364,40 @@
                         ut scelerisque.
                       </p>
 
-                      <button class="button card__button">
+                      <button class="button product-slider__button">
                         website
                       </button>
 
-                      <button class="button card__button">
+                      <button class="button product-slider__button">
                         plugin
                       </button>
 
-                      <button class="button card__button">
+                      <button class="button product-slider__button">
                         landing page
                       </button>
 
                     </div>
 
-                    <div class="card__param">
+                    <div class="product-slider__param">
 
-                      <div class="card__specs">
+                      <div class="product-slider__specs">
 
-                        <a class="card__value-btn button" href="#">
-                          <span class="card__value-rate">
+                        <a class="product-slider__value-btn button" href="#">
+                          <span class="product-slider__value-rate">
                             <span>$</span>10 - <span>$</span>50
                           </span>
                           $10 - $50
                         </a>
 
-                        <span class="lnr lnr-heart card__heart"><span class="card__heart-rate">46</span></span>
+                        <span class="lnr lnr-heart product-slider__heart"><span
+                            class="product-slider__heart-rate">46</span></span>
 
-                        <span class="lnr lnr-cart card__cart"><span class="card__cart-rate">634</span></span>
+                        <span class="lnr lnr-cart product-slider__cart"><span
+                            class="product-slider__cart-rate">634</span></span>
 
                       </div>
 
-                      <div class="card__rate"></div>
+                      <div class="product-slider__rate"></div>
 
                     </div>
 
@@ -397,29 +410,29 @@
 
               <div class="featured__slider-item swiper-slide">
 
-                <article class="card featured__card">
+                <article class="featured__product product-slider">
 
-                  <a class="card__prew" href="#">
-                    <img class="card__photo" src="images/products/Jetro.jpg" alt="template">
+                  <a class="product-slider__prew" href="#">
+                    <img class="product-slider__photo" src="images/products/des8.jpg" alt="template">
                   </a>
 
-                  <div class="card__info">
+                  <div class="product-slider__info">
 
-                    <div class="card__descr">
+                    <div class="product-slider__descr">
 
-                      <span class="card__title">One Page Resume Template</span>
+                      <span class="product-slider__title">One Page Resume Template</span>
 
-                      <a class="user card__user" href="#">
-                        <img class="user__pic card__user-pic" src="images/pics/client.jpg" alt="user-avatar">
-                        <div class="user__name card__user-name">
+                      <a class="user product-slider__user" href="#">
+                        <img class="user__pic product-slider__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name product-slider__user-name">
                           AazzTech
-                          <span class="card__user-work"><span class="card__user-note"
+                          <span class="product-slider__user-work"><span class="product-slider__user-note"
                               style="background-image: url(images/icons/wordpress-violet.svg);"></span>WordPress</span>
                         </div>
                         user profile
                       </a>
 
-                      <p class="card__text">
+                      <p class="product-slider__text">
                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
                         leo
                         quam
@@ -430,41 +443,42 @@
                         ut scelerisque.
                       </p>
 
-                      <button class="button card__button">
+                      <button class="button product-slider__button">
                         website
                       </button>
 
-                      <button class="button card__button">
+                      <button class="button product-slider__button">
                         plugin
                       </button>
 
-                      <button class="button card__button">
+                      <button class="button product-slider__button">
                         landing page
                       </button>
 
                     </div>
 
-                    <div class="card__param">
+                    <div class="product-slider__param">
 
-                      <div class="card__specs">
+                      <div class="product-slider__specs">
 
-                        <a class="card__value-btn button" href="#">
-                          <span class="card__value-rate">
+                        <a class="product-slider__value-btn button" href="#">
+                          <span class="product-slider__value-rate">
                             <span>$</span>10 - <span>$</span>50
                           </span>
                           $10 - $50
                         </a>
 
-                        <span class="lnr lnr-heart card__heart"><span class="card__heart-rate">46</span></span>
+                        <span class="lnr lnr-heart product-slider__heart"><span
+                            class="product-slider__heart-rate">46</span></span>
 
-                        <span class="lnr lnr-cart card__cart"><span class="card__cart-rate">634</span></span>
+                        <span class="lnr lnr-cart product-slider__cart"><span
+                            class="product-slider__cart-rate">634</span></span>
 
                       </div>
 
-                      <div class="card__rate"></div>
+                      <div class="product-slider__rate"></div>
 
                     </div>
-
 
                   </div>
 
@@ -474,9 +488,6 @@
 
             </div>
 
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
-
           </div>
 
         </div>
@@ -484,6 +495,381 @@
       </div>
 
     </section>
+
+
+
+    <section class="release">
+
+      <div class="release__wrapper area">
+
+        <div class="container">
+
+          <div class="section-head release__nav">
+
+            <span class="section-head__title release__title">Newest Release Products</span>
+
+            <a class="release__link" href="#">
+              <span class="release__link-btn">Filter by:</span>
+              <div class="release__dots">
+                <span class="release__dot"></span>
+                <span class="release__dot"></span>
+                <span class="release__dot"></span>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="section-head release__filter">
+
+            <ul class="release__btn-list">
+              <li>
+                <button class="release__btn button">Plugins</button>
+              </li>
+
+              <li>
+                <button class="release__btn button">WordPress</button>
+              </li>
+
+              <li>
+                <button class="release__btn button">Site Template</button>
+              </li>
+
+              <li>
+                <button class="release__btn button">PSD Template</button>
+              </li>
+
+              <li>
+                <button class="release__btn button">Joomla</button>
+              </li>
+
+              <li>
+                <button class="release__btn button">User Interface</button>
+              </li>
+
+              <li>
+                <button class="release__btn button">Landing Page</button>
+              </li>
+
+              <li>
+                <button class="release__btn button">Software</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="release__items">
+
+            <article class="product release__product">
+
+              <a class="product__prew" href="#">
+                <img class="product__photo" src="images/products/Jetro.jpg" alt="template">
+              </a>
+
+              <div class="product__info">
+
+                <div class="product__descr">
+
+                  <span class="product__title">E-commerce Shopping Cart</span>
+
+                  <a class="user product__user" href="#">
+                    <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                    <div class="user__name product__user-name">
+                      Theme-Valley
+                      <span class="product__user-work"><span class="product__user-note"
+                          style="background-image: url(images/icons/wordpress-violet.svg);"></span>Plugin</span>
+                    </div>
+                    user profile
+                  </a>
+
+                  <p class="product__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </p>
+
+                </div>
+
+                <div class="product__param">
+
+                  <a class="product__value-btn button" href="#">
+                    <span class="product__value-rate">
+                      <span>$</span>20<span></span>
+                    </span>
+                    $20
+                  </a>
+
+                  <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">90</span></span>
+
+                  <div class="product__rate product__rate--off"></div>
+
+                  <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">246</span></span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+            <article class="product release__product">
+
+              <a class="product__prew" href="#">
+                <img class="product__photo" src="images/products/des2.jpg" alt="template">
+              </a>
+
+              <div class="product__info">
+
+                <div class="product__descr">
+
+                  <span class="product__title">Marketify Coffee Shop</span>
+
+                  <a class="user product__user" href="#">
+                    <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                    <div class="user__name product__user-name">
+                      EchoTheme
+                      <span class="product__user-work capita"><span class="product__user-note"
+                          style="background-image: url(images/icons/psd.svg);"></span>Psd</span>
+                    </div>
+                    user profile
+                  </a>
+
+                  <p class="product__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </p>
+
+                </div>
+
+                <div class="product__param">
+
+                  <a class="product__value-btn button" href="#">
+                    <span class="product__value-rate">
+                      <span>$</span>18<span></span>
+                    </span>
+                    $18
+                  </a>
+
+                  <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">48</span></span>
+
+                  <div class="product__rate product__rate--off"></div>
+
+                  <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">50</span></span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+            <article class="product release__product">
+
+              <a class="product__prew" href="#">
+                <img class="product__photo" src="images/products/des4.jpg" alt="template">
+              </a>
+
+              <div class="product__info">
+
+                <div class="product__descr">
+
+                  <span class="product__title">Bryson - Portfolio Template</span>
+
+                  <a class="user product__user" href="#">
+                    <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                    <div class="user__name product__user-name">
+                      Artcorner
+                      <span class="product__user-work capita"><span class="product__user-note"
+                          style="background-image: url(images/icons/html.png);"></span>html</span>
+                    </div>
+                    user profile
+                  </a>
+
+                  <p class="product__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </p>
+
+                </div>
+
+                <div class="product__param">
+
+                  <a class="product__value-btn button" href="#">
+                    <span class="product__value-rate">
+                      <span>$</span>10<span></span>
+                    </span>
+                    $10
+                  </a>
+
+                  <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">56</span></span>
+
+                  <div class="product__rate"></div>
+
+                  <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">68</span></span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+            <article class="product release__product">
+
+              <a class="product__prew" href="#">
+                <img class="product__photo" src="images/products/des8.jpg" alt="template">
+              </a>
+
+              <div class="product__info">
+
+                <div class="product__descr">
+
+                  <span class="product__title">E-commerce Shopping Cart</span>
+
+                  <a class="user product__user" href="#">
+                    <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                    <div class="user__name product__user-name">
+                      Design-Hub
+                      <span class="product__user-work"><span class="product__user-note"
+                          style="background-image: url(images/icons/wordpress-violet.svg);"></span>Plugin</span>
+                    </div>
+                    user profile
+                  </a>
+
+                  <p class="product__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </p>
+
+                </div>
+
+                <div class="product__param">
+
+                  <a class="product__value-btn button" href="#">
+                    <span class="product__value-rate">
+                      <span>$</span>10 - <span>50</span>
+                    </span>
+                    $20
+                  </a>
+
+                  <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">90</span></span>
+
+                  <div class="product__rate"></div>
+
+                  <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">45</span></span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+            <article class="product release__product">
+
+              <a class="product__prew" href="#">
+                <img class="product__photo" src="images/products/des6.jpg" alt="template">
+              </a>
+
+              <div class="product__info">
+
+                <div class="product__descr">
+
+                  <span class="product__title">Marketify Coffee Shop</span>
+
+                  <a class="user product__user" href="#">
+                    <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                    <div class="user__name product__user-name">
+                      AazzTech
+                      <span class="product__user-work capita"><span class="product__user-note"
+                          style="background-image: url(images/icons/psd.svg);"></span>psd</span>
+                    </div>
+                    user profile
+                  </a>
+
+                  <p class="product__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </p>
+
+                </div>
+
+                <div class="product__param">
+
+                  <a class="product__value-btn button" href="#">
+                    <span class="product__value-rate">
+                      <span>$</span>10 - <span>50</span>
+                    </span>
+                    $10 - 50
+                  </a>
+
+                  <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">48</span></span>
+
+                  <div class="product__rate product__rate--off"></div>
+
+                  <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">50</span></span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+            <article class="product release__product">
+
+              <a class="product__prew" href="#">
+                <img class="product__photo" src="images/products/des1.jpg" alt="template">
+              </a>
+
+              <div class="product__info">
+
+                <div class="product__descr">
+
+                  <span class="product__title">Bryson - Portfolio Template</span>
+
+                  <a class="user product__user" href="#">
+                    <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                    <div class="user__name product__user-name">
+                      Coder-Lab
+                      <span class="product__user-work capita"><span class="product__user-note"
+                          style="background-image: url(images/icons/html.png);"></span>html</span>
+                    </div>
+                    user profile
+                  </a>
+
+                  <p class="product__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </p>
+
+                </div>
+
+                <div class="product__param">
+
+                  <a class="product__value-btn button" href="#">
+                    <span class="product__value-rate">
+                      <span>$</span>10<span></span>
+                    </span>
+                    $10
+                  </a>
+
+                  <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">56</span></span>
+
+                  <div class="product__rate"></div>
+
+                  <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">68</span></span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+          <button class="release__all button">All New Products</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
 
     <section class="space"></section>
 

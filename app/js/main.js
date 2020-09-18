@@ -1,6 +1,15 @@
 $(function () {
 
-  $(".card__rate").rateYo({
+  $(".product-slider__rate").rateYo({
+    rating: 4.5,
+    starWidth: "15px",
+    normalFill: "#ffffff",
+    ratedFill: "#ffc000",
+    readOnly: true,
+    spacing: "3px"
+  });
+
+  $(".product__rate").rateYo({
     rating: 4.5,
     starWidth: "15px",
     normalFill: "#ffffff",
