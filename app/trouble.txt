@@ -1,6 +1,0 @@
-
-<div class="header__top-inner">
-<div class="header__bottom-inner">
-Если ты скажешь, что можно одним классом header__inner задать, то не соглашусь/
-Могут что-то новое в хедер добавить, типа акций.
-
