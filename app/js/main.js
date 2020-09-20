@@ -24,4 +24,10 @@ $(function () {
       prevEl: '.featured__toleft',
     },
   });
+
+  $('.release__link').on('click', function () {
+    $('.release__box-hidden').slideToggle("fast");
+  });
+
+  var mixer = mixitup('.release__items');
 });

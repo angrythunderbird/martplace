@@ -80,7 +80,7 @@
 
               <li class="menu__item">
                 <!-- Класс оставляю для выпадашек -->
-                <a class="menu__link" href="#">home</a>
+                <a class="menu__link menu__link--active" href="#">home</a>
               </li>
 
               <li class="menu__item">
@@ -238,9 +238,9 @@
             <span class="section-head__title featured__title">Weekly Featured Products</span>
 
             <div class="featured__btn-box">
-              <button class="button featured__toleft"><span
+              <button class="button featured__toleft" type="button"><span
                   class="lnr lnr-chevron-left featured__arrow"></span></button>
-              <button class="button featured__toright"><span
+              <button class="button featured__toright" type="button"><span
                   class="lnr lnr-chevron-right featured__arrow"></span></button>
             </div>
 
@@ -285,15 +285,15 @@
                         ut scelerisque.
                       </p>
 
-                      <button class="button product-slider__button">
+                      <button class="button product-slider__button" type="button">
                         website
                       </button>
 
-                      <button class="button product-slider__button">
+                      <button class="button product-slider__button" type="button">
                         plugin
                       </button>
 
-                      <button class="button product-slider__button">
+                      <button class="button product-slider__button" type="button">
                         landing page
                       </button>
 
@@ -364,15 +364,15 @@
                         ut scelerisque.
                       </p>
 
-                      <button class="button product-slider__button">
+                      <button class="button product-slider__button" type="button">
                         website
                       </button>
 
-                      <button class="button product-slider__button">
+                      <button class="button product-slider__button" type="button">
                         plugin
                       </button>
 
-                      <button class="button product-slider__button">
+                      <button class="button product-slider__button" type="button">
                         landing page
                       </button>
 
@@ -400,7 +400,6 @@
                       <div class="product-slider__rate"></div>
 
                     </div>
-
 
                   </div>
 
@@ -443,15 +442,15 @@
                         ut scelerisque.
                       </p>
 
-                      <button class="button product-slider__button">
+                      <button class="button product-slider__button" type="button">
                         website
                       </button>
 
-                      <button class="button product-slider__button">
+                      <button class="button product-slider__button" type="button">
                         plugin
                       </button>
 
-                      <button class="button product-slider__button">
+                      <button class="button product-slider__button" type="button">
                         landing page
                       </button>
 
@@ -508,14 +507,35 @@
 
             <span class="section-head__title release__title">Newest Release Products</span>
 
-            <a class="release__link" href="#">
-              <span class="release__link-btn">Filter by:</span>
+            <button class="release__link" type="menu">
+              <span class="release__link-title">Filter by:</span>
               <div class="release__dots">
                 <span class="release__dot"></span>
                 <span class="release__dot"></span>
                 <span class="release__dot"></span>
               </div>
-            </a>
+            </button>
+
+            <div class="release__box-hidden">
+              <ul class="release__list-hidden">
+                <li>
+                  <button class="release__link-hidden release__link-hidden--active" type="button">Trending
+                    items</button>
+                </li>
+                <li>
+                  <button class="release__link-hidden" type="button">Best seller</button>
+                </li>
+                <li>
+                  <button class="release__link-hidden" type="button">Best rating</button>
+                </li>
+                <li>
+                  <button class="release__link-hidden" type="button">Low price</button>
+                </li>
+                <li>
+                  <button class="release__link-hidden" type="button">High price</button>
+                </li>
+              </ul>
+            </div>
 
           </div>
 
@@ -523,35 +543,37 @@
 
             <ul class="release__btn-list">
               <li>
-                <button class="release__btn button">Plugins</button>
+                <button class="release__btn release__btn--active button" type="button"
+                  data-filter=".category-plugin">Plugins</button>
               </li>
 
               <li>
-                <button class="release__btn button">WordPress</button>
+                <button class="release__btn button" type="button" data-filter=".category-wp">WordPress</button>
               </li>
 
               <li>
-                <button class="release__btn button">Site Template</button>
+                <button class="release__btn button" type="button" data-filter=".category-template">Site
+                  Template</button>
               </li>
 
               <li>
-                <button class="release__btn button">PSD Template</button>
+                <button class="release__btn button" type="button" data-filter=".category-psd">PSD Template</button>
               </li>
 
               <li>
-                <button class="release__btn button">Joomla</button>
+                <button class="release__btn button" type="button" data-filter=".category-joomla">Joomla</button>
               </li>
 
               <li>
-                <button class="release__btn button">User Interface</button>
+                <button class="release__btn button" type="button" data-filter=".category-ui">User Interface</button>
               </li>
 
               <li>
-                <button class="release__btn button">Landing Page</button>
+                <button class="release__btn button" type="button" data-filter=".category-landing">Landing Page</button>
               </li>
 
               <li>
-                <button class="release__btn button">Software</button>
+                <button class="release__btn button" type="button" data-filter=".category-soft">Software</button>
               </li>
 
             </ul>
@@ -560,11 +582,16 @@
 
           <div class="release__items">
 
-            <article class="product release__product">
+            <article class="product release__product mix category-wp category-plugin category-soft">
 
-              <a class="product__prew" href="#">
+              <div class="product__prew">
+
                 <img class="product__photo" src="images/products/Jetro.jpg" alt="template">
-              </a>
+                <div class="product__mask">
+                  <a class="button product__button product__button--mod" href="#">More Info</a>
+                  <a class="button product__button" href="#">Live Demo</a>
+                </div>
+              </div>
 
               <div class="product__info">
 
@@ -610,11 +637,15 @@
 
             </article>
 
-            <article class="product release__product">
+            <article class="product release__product mix category-psd category-template">
 
-              <a class="product__prew" href="#">
+              <div class="product__prew">
                 <img class="product__photo" src="images/products/des2.jpg" alt="template">
-              </a>
+                <div class="product__mask">
+                  <a class="button product__button product__button--mod" href="#">More Info</a>
+                  <a class="button product__button" href="#">Live Demo</a>
+                </div>
+              </div>
 
               <div class="product__info">
 
@@ -660,11 +691,15 @@
 
             </article>
 
-            <article class="product release__product">
+            <article class="product release__product mix category-soft category-joomla">
 
-              <a class="product__prew" href="#">
+              <div class="product__prew">
                 <img class="product__photo" src="images/products/des4.jpg" alt="template">
-              </a>
+                <div class="product__mask">
+                  <a class="button product__button product__button--mod" href="#">More Info</a>
+                  <a class="button product__button" href="#">Live Demo</a>
+                </div>
+              </div>
 
               <div class="product__info">
 
@@ -710,11 +745,15 @@
 
             </article>
 
-            <article class="product release__product">
+            <article class="product release__product mix category-wp">
 
-              <a class="product__prew" href="#">
+              <div class="product__prew">
                 <img class="product__photo" src="images/products/des8.jpg" alt="template">
-              </a>
+                <div class="product__mask">
+                  <a class="button product__button product__button--mod" href="#">More Info</a>
+                  <a class="button product__button" href="#">Live Demo</a>
+                </div>
+              </div>
 
               <div class="product__info">
 
@@ -760,11 +799,15 @@
 
             </article>
 
-            <article class="product release__product">
+            <article class="product release__product mix category-psd category-ui">
 
-              <a class="product__prew" href="#">
+              <div class="product__prew">
                 <img class="product__photo" src="images/products/des6.jpg" alt="template">
-              </a>
+                <div class="product__mask">
+                  <a class="button product__button product__button--mod" href="#">More Info</a>
+                  <a class="button product__button" href="#">Live Demo</a>
+                </div>
+              </div>
 
               <div class="product__info">
 
@@ -810,11 +853,15 @@
 
             </article>
 
-            <article class="product release__product">
+            <article class="product release__product mix category-landing category-soft">
 
-              <a class="product__prew" href="#">
+              <div class="product__prew">
                 <img class="product__photo" src="images/products/des1.jpg" alt="template">
-              </a>
+                <div class="product__mask">
+                  <a class="button product__button product__button--mod" href="#">More Info</a>
+                  <a class="button product__button" href="#">Live Demo</a>
+                </div>
+              </div>
 
               <div class="product__info">
 
@@ -862,20 +909,13 @@
 
           </div>
 
-          <button class="release__all button">All New Products</button>
+          <button class="release__all button" type="button" data-filter="all">All New Products</button>
 
         </div>
 
       </div>
 
     </section>
-
-
-    <section class="space"></section>
-
-
-
-
 
   </main>
 
