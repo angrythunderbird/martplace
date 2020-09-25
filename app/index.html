@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martplace</title>
+  <link rel="shortcut icon" href="images/icons/favicon-logo.ico" type="x-icon">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -20,12 +21,12 @@
 
         <div class="header__inner">
 
-          <a class="header__logo" href="#">
+          <a class="logo" href="#">
             <img src="images/logo.png" alt="logo">
             Logo
           </a>
 
-          <a class="button header__button" href="#" type="button">
+          <a class="button header__button" href="#">
             Become a Seller
           </a>
 
@@ -59,7 +60,6 @@
               Taofiq Hakim
               <span class="header__user-value"><span>$</span>20.45</span>
             </div>
-            user profile
           </a>
 
         </div>
@@ -104,8 +104,8 @@
           </nav>
 
           <form class="form header__form" action="#" method="get" name="search">
-            <label for="form-searh" class="form__label header__form-label">search</label>
-            <input id="form-searh" class="form__input header__form-input" placeholder="Search product here..."
+            <label for="form-search" class="form__label header__form-label">search</label>
+            <input id="form-search" class="form__input header__form-input" placeholder="Search product here..."
               type="search" name="search" value="">
             <button class="button header__form-btn " type="submit"><span
                 class="lnr lnr-magnifier"></span>submit</button>
@@ -123,52 +123,52 @@
 
   <main>
 
-    <section class="intro">
+    <section class="hero">
 
       <div class="container">
 
-        <div class="intro__wrapper">
+        <div class="hero__wrapper">
 
-          <div class="intro__main">
+          <div class="hero__main">
 
-            <div class="intro__title">
-              <span class="intro__pretitle">Create Your Own</span>
-              <span class="intro__main-title">Digital Product Marketplace</span>
+            <div class="hero__title">
+              <span class="hero__pretitle">Create Your Own</span>
+              Digital Product Marketplace
             </div>
 
-            <p class="intro__text">
+            <p class="hero__text">
               MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
             </p>
 
-            <div class="intro__btn-box">
-              <a class="button intro__button" href="#">View All Products</a>
-              <a class="button intro__button intro__button--mod" href="#">Popular Products</a>
+            <div class="hero__btns">
+              <a class="button button--white hero__button" href="#">View All Products</a>
+              <a class="button button--transparent hero__button" href="#">Popular Products</a>
             </div>
 
           </div>
 
-          <div class="intro__search-inner search">
+          <div class="hero__search-inner">
 
-            <form class="search__form" action="#" method="get">
-              <label for="search-input" class="search__label">search</label>
-              <input id="search-input" class="search__input" placeholder="Search your products..." type="search"
+            <form class="hero__form" action="#" method="get">
+              <label for="search-input" class="hero__label">please enter request</label>
+              <input id="search-input" class="hero__input" placeholder="Search your products..." type="search"
                 name="search" value="">
-              <label for="search-select" class="search__label">search</label>
-              <select id="search-select" class="search__select" form="search">
+              <label for="search-select" class="hero__label">please choose category</label>
+              <select id="search-select" class="hero__select" form="search">
                 <option selected disabled>All Categories</option>
-                <option class="search__category" disabled>Landings</option>
+                <option class="hero__category" disabled>Landings</option>
                 <option value="Jetro">Jetro</option>
                 <option value="Bis Lite">Bis Lite</option>
                 <option value="Surf">Surf</option>
-                <option class="search__category" disabled>Portals</option>
+                <option class="hero__category" disabled>Portals</option>
                 <option value="MartPlace">Mart Place</option>
                 <option value="Moderno">Moderno</option>
                 <option value="Mavic">Mavic</option>
-                <option class="search__category" disabled>Templates</option>
+                <option class="hero__category" disabled>Templates</option>
                 <option value="WordPress">WordPress</option>
                 <option value="OpenCart">OpenCart</option>
               </select>
-              <button class="search__button" type="submit">Search Now</button>
+              <button class="hero__search-btn" type="submit">Search Now</button>
             </form>
 
           </div>
@@ -187,31 +187,34 @@
 
           <div class="feature directions__feature">
             <!-- Модификаторами по 3 класса выходит. -->
-            <div class="feature__item directions__feature-item">
-              <a class="feature__title directions__feature-title-1" href="#">
+            <div class="feature__item">
+              <span class="feature__img" style="background-image: url(images/pics/feature-ux.png);"></span>
+              <span class="feature__title">
                 Best UX Research
-              </a>
-              <p class="feature__text directions__feature-text">
+              </span>
+              <p class="feature__text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet diam congue is laoreet elit metus.
               </p>
             </div>
 
-            <div class="feature__item directions__feature-item">
-              <a class="feature__title directions__feature-title-2" href="#">
+            <div class="feature__item">
+              <span class="feature__img" style="background-image: url(images/pics/feature-resp.png);"></span>
+              <span class="feature__title">
                 Fully Responsive
-              </a>
-              <p class="feature__text directions__feature-text">
+              </span>
+              <p class="feature__text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet diam congue is laoreet elit metus.
               </p>
             </div>
 
-            <div class="feature__item directions__feature-item">
-              <a class="feature__title directions__feature-title-3" href="#">
+            <div class="feature__item">
+              <span class="feature__img" style="background-image: url(images/pics/feature-buy.png);"></span>
+              <span class="feature__title">
                 Buy & Sell Easily
-              </a>
-              <p class="feature__text directions__feature-text">
+              </span>
+              <p class="feature__text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet diam congue is laoreet elit metus.
               </p>
@@ -237,11 +240,11 @@
 
             <span class="section-head__title featured__title">Weekly Featured Products</span>
 
-            <div class="featured__btn-box">
-              <button class="button featured__toleft" type="button"><span
-                  class="lnr lnr-chevron-left featured__arrow"></span></button>
-              <button class="button featured__toright" type="button"><span
-                  class="lnr lnr-chevron-right featured__arrow"></span></button>
+            <div class="featured__btn-box section-head__btn-box">
+              <button class="button featured__toleft section-head__toleft" type="button"><span
+                  class="lnr lnr-chevron-left featured__arrow section-head__arrow"></span></button>
+              <button class="button featured__toright section-head__toright" type="button"><span
+                  class="lnr lnr-chevron-right featured__arrow section-head__arrow"></span></button>
             </div>
 
           </div>
@@ -507,7 +510,7 @@
 
             <span class="section-head__title release__title">Newest Release Products</span>
 
-            <button class="release__link" type="menu">
+            <button class="release__link" type="button">
               <span class="release__link-title">Filter by:</span>
               <div class="release__dots">
                 <span class="release__dot"></span>
@@ -516,8 +519,8 @@
               </div>
             </button>
 
-            <div class="release__box-hidden">
-              <ul class="release__list-hidden">
+            <div class="release__box">
+              <ul class="release__list">
                 <li>
                   <button class="release__link-hidden release__link-hidden--active" type="button">Trending
                     items</button>
@@ -917,10 +920,417 @@
 
     </section>
 
+
+
+    <section class="followers">
+
+      <div class="followers__wrapper area">
+
+        <div class="container">
+
+          <div class="followers__nav section-head">
+
+            <span class="section-head__title followers__title">Your Followers Feed</span>
+
+            <div class="followers__btn-box section-head__btn-box">
+              <button class="button followers__toleft section-head__toleft" type="button"><span
+                  class="lnr lnr-chevron-left followers__arrow section-head__arrow"></span></button>
+              <button class="button followers__toright section-head__toright" type="button"><span
+                  class="lnr lnr-chevron-right followers__arrow section-head__arrow"></span></button>
+            </div>
+
+          </div>
+
+          <div class="followers__slider swiper-container">
+
+            <div class="swiper-wrapper">
+
+              <div class="followers__slider-item swiper-slide">
+
+                <article class="product release__product">
+
+                  <div class="product__prew">
+
+                    <img class="product__photo" src="images/products/Jetro.jpg" alt="template">
+                    <div class="product__mask">
+                      <a class="button product__button product__button--mod" href="#">More Info</a>
+                      <a class="button product__button" href="#">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product__info">
+
+                    <div class="product__descr">
+
+                      <span class="product__title">E-commerce Shopping Cart</span>
+
+                      <a class="user product__user" href="#">
+                        <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name product__user-name">
+                          Theme-Valley
+                          <span class="product__user-work"><span class="product__user-note"
+                              style="background-image: url(images/icons/wordpress-violet.svg);"></span>Plugin</span>
+                        </div>
+                        user profile
+                      </a>
+
+                      <p class="product__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet congue.
+                      </p>
+
+                    </div>
+
+                    <div class="product__param">
+
+                      <a class="product__value-btn button" href="#">
+                        <span class="product__value-rate">
+                          <span>$</span>20<span></span>
+                        </span>
+                        $20
+                      </a>
+
+                      <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">90</span></span>
+
+                      <div class="product__rate product__rate--off"></div>
+
+                      <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">246</span></span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+              <div class="followers__slider-item swiper-slide">
+
+                <article class="product release__product">
+
+                  <div class="product__prew">
+                    <img class="product__photo" src="images/products/des2.jpg" alt="template">
+                    <div class="product__mask">
+                      <a class="button product__button product__button--mod" href="#">More Info</a>
+                      <a class="button product__button" href="#">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product__info">
+
+                    <div class="product__descr">
+
+                      <span class="product__title">Marketify Coffee Shop</span>
+
+                      <a class="user product__user" href="#">
+                        <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name product__user-name">
+                          EchoTheme
+                          <span class="product__user-work capita"><span class="product__user-note"
+                              style="background-image: url(images/icons/psd.svg);"></span>Psd</span>
+                        </div>
+                        user profile
+                      </a>
+
+                      <p class="product__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet congue.
+                      </p>
+
+                    </div>
+
+                    <div class="product__param">
+
+                      <a class="product__value-btn button" href="#">
+                        <span class="product__value-rate">
+                          <span>$</span>18<span></span>
+                        </span>
+                        $18
+                      </a>
+
+                      <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">48</span></span>
+
+                      <div class="product__rate product__rate--off"></div>
+
+                      <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">50</span></span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+              <div class="followers__slider-item swiper-slide">
+
+                <article class="product release__product">
+
+                  <div class="product__prew">
+                    <img class="product__photo" src="images/products/des4.jpg" alt="template">
+                    <div class="product__mask">
+                      <a class="button product__button product__button--mod" href="#">More Info</a>
+                      <a class="button product__button" href="#">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product__info">
+
+                    <div class="product__descr">
+
+                      <span class="product__title">Bryson - Portfolio Template</span>
+
+                      <a class="user product__user" href="#">
+                        <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name product__user-name">
+                          Artcorner
+                          <span class="product__user-work capita"><span class="product__user-note"
+                              style="background-image: url(images/icons/html.png);"></span>html</span>
+                        </div>
+                        user profile
+                      </a>
+
+                      <p class="product__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet congue.
+                      </p>
+
+                    </div>
+
+                    <div class="product__param">
+
+                      <a class="product__value-btn button" href="#">
+                        <span class="product__value-rate">
+                          <span>$</span>10<span></span>
+                        </span>
+                        $10
+                      </a>
+
+                      <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">56</span></span>
+
+                      <div class="product__rate"></div>
+
+                      <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">68</span></span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+              <div class="followers__slider-item swiper-slide">
+
+                <article class="product release__product">
+
+                  <div class="product__prew">
+                    <img class="product__photo" src="images/products/des8.jpg" alt="template">
+                    <div class="product__mask">
+                      <a class="button product__button product__button--mod" href="#">More Info</a>
+                      <a class="button product__button" href="#">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product__info">
+
+                    <div class="product__descr">
+
+                      <span class="product__title">E-commerce Shopping Cart</span>
+
+                      <a class="user product__user" href="#">
+                        <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name product__user-name">
+                          Design-Hub
+                          <span class="product__user-work"><span class="product__user-note"
+                              style="background-image: url(images/icons/wordpress-violet.svg);"></span>Plugin</span>
+                        </div>
+                        user profile
+                      </a>
+
+                      <p class="product__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet congue.
+                      </p>
+
+                    </div>
+
+                    <div class="product__param">
+
+                      <a class="product__value-btn button" href="#">
+                        <span class="product__value-rate">
+                          <span>$</span>10 - <span>50</span>
+                        </span>
+                        $20
+                      </a>
+
+                      <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">90</span></span>
+
+                      <div class="product__rate"></div>
+
+                      <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">45</span></span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+              <div class="followers__slider-item swiper-slide">
+
+                <article class="product release__product">
+
+                  <div class="product__prew">
+                    <img class="product__photo" src="images/products/des6.jpg" alt="template">
+                    <div class="product__mask">
+                      <a class="button product__button product__button--mod" href="#">More Info</a>
+                      <a class="button product__button" href="#">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product__info">
+
+                    <div class="product__descr">
+
+                      <span class="product__title">Marketify Coffee Shop</span>
+
+                      <a class="user product__user" href="#">
+                        <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name product__user-name">
+                          AazzTech
+                          <span class="product__user-work capita"><span class="product__user-note"
+                              style="background-image: url(images/icons/psd.svg);"></span>psd</span>
+                        </div>
+                        user profile
+                      </a>
+
+                      <p class="product__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet congue.
+                      </p>
+
+                    </div>
+
+                    <div class="product__param">
+
+                      <a class="product__value-btn button" href="#">
+                        <span class="product__value-rate">
+                          <span>$</span>10 - <span>50</span>
+                        </span>
+                        $10 - 50
+                      </a>
+
+                      <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">48</span></span>
+
+                      <div class="product__rate product__rate--off"></div>
+
+                      <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">50</span></span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+              <div class="followers__slider-item swiper-slide">
+
+                <article class="product release__product">
+
+                  <div class="product__prew">
+                    <img class="product__photo" src="images/products/des1.jpg" alt="template">
+                    <div class="product__mask">
+                      <a class="button product__button product__button--mod" href="#">More Info</a>
+                      <a class="button product__button" href="#">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product__info">
+
+                    <div class="product__descr">
+
+                      <span class="product__title">Bryson - Portfolio Template</span>
+
+                      <a class="user product__user" href="#">
+                        <img class="user__pic product__user-pic" src="images/pics/client.jpg" alt="user-avatar">
+                        <div class="user__name product__user-name">
+                          Coder-Lab
+                          <span class="product__user-work capita"><span class="product__user-note"
+                              style="background-image: url(images/icons/html.png);"></span>html</span>
+                        </div>
+                        user profile
+                      </a>
+
+                      <p class="product__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet congue.
+                      </p>
+
+                    </div>
+
+                    <div class="product__param">
+
+                      <a class="product__value-btn button" href="#">
+                        <span class="product__value-rate">
+                          <span>$</span>10<span></span>
+                        </span>
+                        $10
+                      </a>
+
+                      <span class="lnr lnr-heart product__heart"><span class="product__heart-rate">56</span></span>
+
+                      <div class="product__rate"></div>
+
+                      <span class="lnr lnr-cart product__cart"><span class="product__cart-rate">68</span></span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <setion class="stats">
+
+      <div class="stats__wrapper">
+
+        <div class="container">
+
+          <div class="stats__inner">
+
+            <article class="stats__item">
+
+
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </setion>
+
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -21,9 +21,11 @@ gulp.task('sass', function () {
 gulp.task('style', function () {
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
+    'node_modules/linearicons/dist/web-font/style.css',
     'node_modules/swiper/swiper-bundle.css',
     'node_modules/magnific-popup/dist/magnific-popup.css',
     'node_modules/rateyo/src/jquery.rateyo.css'
+    
     /* 'node_modules/animate.css/animate.css' */
   ])
     .pipe(concat('libs.min.css'))

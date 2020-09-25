@@ -1,0 +1,35 @@
+.button {
+  margin: 0;
+  padding: 0;
+  outline: transparent;
+  border: none;
+  background-color: $blue-text;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+
+  &--white {
+    background-color: #fff;
+    color: $blue-text;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ffffff;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px $focus;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 4px $hover-2;
+  }
+
+  &:active {
+    box-shadow: inset 0px 4px 4px rgba(247, 243, 0, 0.7);
+  }
+}
