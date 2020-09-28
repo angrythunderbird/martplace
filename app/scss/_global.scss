@@ -9,9 +9,7 @@ html {
 }
 
 a {
-  display: inline-block;
   text-decoration: none;
-  outline: transparent;
 }
 
 ul,
@@ -42,124 +40,27 @@ body {
   font-size: 0;
 }
 
-.lnr {
-  display: inline-block;
-}
-
 .area {
   padding: 120px 0;
 }
 
-.section-head {
-  width: 100%;
-  margin-bottom: 50px;
-  padding: 33px 29px 32px 31px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-  border-radius: 4px;
-  background-color: #ffffff;
-
-  &__title {
-    color: #000000;
-    font-size: 30px;
-  }
-
-  &__btn-box {
-    height: 45px;
-    margin-right: 1px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid #7347c1;
-    border-radius: 23px;
-    overflow: hidden;
-  }
-
-  &__toleft {
-    width: 54px;
-    background-color: #7347c1;
-    transition: background-color 0.3s;
-
-    &:focus {
-      background-color: $focus;
-    }
-
-    &:hover {
-      box-shadow: none;
-      background-color: #fff;
-    }
-
-    &:active {
-      background-color: $active;
-    }
-  }
-
-  &__toright {
-    width: 54px;
-    background-color: #7347c1;
-    transition: background-color 0.3s;
-
-    &:focus {
-      background-color: $focus;
-    }
-
-    &:hover {
-      box-shadow: none;
-      background-color: #fff;
-    }
-
-    &:active {
-      background-color: $active;
-    }
-  }
-
-  &__arrow {
-    &::before {
-      color: #ffffff;
-      font-size: 14px;
-    }
-
-    &:hover {
-      &:before {
-        color: #7347c1;
-      }
-    }
-  }
-}
-
-.product__heart,
-.product-slider__heart {
-  &::before {
-    margin-right: 10px;
-    color: #7347c1;
-    font-size: 15px;
-  }
-}
-
-.product__cart,
-.product-slider__cart {
-  &::before {
-    /* padding: 14px 25px 13px 16px; */
-    margin-right: 10px;
-    color: $blue-text;
-    font-size: 15px;
-  }
-}
-
-/* .featured__arrow {
-  &::before {
-    color: #ffffff;
-    font-size: 14px;
-  }
-
-  &:hover {
-    &:before {
-      color: #7347c1;
-    }
-  }
-} */
-
-.capita {
+.capita,
+.text-up {
   text-transform: uppercase;
+}
+
+.font-zero {
+  font-size: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.bg-soft-grey {
+  background-color: #eff1f5;
+}
+
+.bg-light {
+  background-color: #f6f7fb;
 }

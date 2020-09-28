@@ -1,9 +1,9 @@
 $(function () {
 
-  $(".product-slider__rate").rateYo({
+  $(".featured__rate").rateYo({
     rating: 4.5,
     starWidth: "15px",
-    normalFill: "#ffffff",
+    normalFill: "#c3c3c3",
     ratedFill: "#ffc000",
     readOnly: true,
     spacing: "3px"
@@ -11,8 +11,8 @@ $(function () {
 
   $(".product__rate").rateYo({
     rating: 4.5,
-    starWidth: "15px",
-    normalFill: "#ffffff",
+    starWidth: "14px",
+    normalFill: "#c3c3c3",
     ratedFill: "#ffc000",
     readOnly: true,
     spacing: "3px"
@@ -26,7 +26,7 @@ $(function () {
   });
 
   $('.release__link').on('click', function () {
-    $('.release__box-hidden').slideToggle("fast");
+    $('.release__box').slideToggle("fast");
   });
 
   var mixer = mixitup('.release__items');

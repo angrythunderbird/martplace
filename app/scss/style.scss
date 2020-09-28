@@ -6,6 +6,7 @@
 @import "components/form";
 @import "components/header";
 @import "components/product";
+@import "components/section-head";
 @import "components/user";
 @import "index-page";
 
@@ -16,12 +17,4 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
-}
-
-.lnr-chevron-left {
-  padding: 14px 16px 13px 25px;
-}
-
-.lnr-chevron-right {
-  padding: 14px 25px 13px 16px;
 }

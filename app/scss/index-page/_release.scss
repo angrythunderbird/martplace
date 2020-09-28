@@ -1,16 +1,10 @@
 .release {
-  &__wrapper {
-    background-color: #f6f7fb;
-  }
-
-  &__nav {
-    padding-top: 38px;
-    padding-bottom: 38px;
-    margin-bottom: 30px;
-  }
 
   &__nav {
     position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   &__link {
@@ -24,48 +18,15 @@
     outline: transparent;
 
     &:focus {
-      font-size: 18px;
-      font-weight: 700;
       color: $focus;
-
-      .release__link-title {
-        margin-right: 20px;
-      }
-
-      .release__dot {
-        width: 10px;
-        background-color: $focus;
-      }
     }
 
     &:hover {
-      font-size: 18px;
-      font-weight: 700;
       color: $hover;
-
-      .release__link-title {
-        margin-right: 20px;
-      }
-
-      .release__dot {
-        width: 10px;
-        background-color: $hover;
-      }
     }
 
     &:active {
-      font-size: 18px;
-      font-weight: 700;
       color: $active;
-
-      .release__link-title {
-        margin-right: 20px;
-      }
-
-      .release__dot {
-        width: 10px;
-        background-color: $active;
-      }
     }
   }
 
@@ -73,20 +34,14 @@
     display: inline-block;
     margin-right: 25px;
     padding-bottom: 3px;
-    transition: all 0.3s;
   }
 
-  &__dot {
-    display: block;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #a3b1c4;
-    transition: width 0.3s;
-  }
-
-  &__dot:not(:last-child) {
-    margin-bottom: 2px;
+  &__dots {
+    display: inline-block;
+    width: 6px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   &__box {
@@ -129,11 +84,6 @@
     cursor: pointer;
     transition: color, font-weight 0.3s;
 
-    &--active {
-      color: $hover;
-      font-weight: 700;
-    }
-
     &:focus {
       color: $focus;
       font-weight: 700;
@@ -146,40 +96,36 @@
   }
 
   &__filter {
-    padding: 29px;
+    padding: 28px 29px;
   }
 
   &__btn-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
 
   &__btn {
-    margin-right: 9px;
-    padding: 9px 20px;
+    margin-right: 8px;
+    padding: 10px 20px 9px;
     border-radius: 16px;
-    background-color: #f1f3f6;
-    color: #747b86;
-    font-size: 15px;
 
     &.mixitup-control-active {
       background-color: $blue-text;
       color: #fff;
     }
-
-    &--active {
-      color: #fff;
-      background-color: $blue-text;
-      font-weight: 500;
-    }
   }
 
   &__items {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  &__product {
+    margin-bottom: 31px;
   }
 
   &__all {

@@ -2,44 +2,27 @@
   font-size: 0;
   display: flex;
   align-items: center;
-
-  &:focus {
-    text-decoration: underline;
-
-    .user__pic {
-      border: 2px solid $focus;
-    }
-  }
+  transition: filter 0.3s;
 
   &:hover {
-    text-decoration: underline;
-
-    .user__pic {
-      border: 2px solid $hover;
-    }
+    filter: drop-shadow(1px 1px 1px #0674ec);
   }
 
   &:active {
-    text-decoration: underline;
-
-    .user__pic {
-      border: 2px solid $active;
-    }
+    filter: drop-shadow(1px 1px 1px #0674ec);
   }
 
   &__pic {
     background-color: #7c7979;
     border-radius: 50%;
     overflow: hidden;
-    transition: border 0.3s;
+    object-fit: cover;
   }
 
   &__name {
-    font-size: 15px;
     line-height: 22px;
     font-weight: 500;
     color: #333;
     text-transform: capitalize;
-
   }
 }

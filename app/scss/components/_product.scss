@@ -1,12 +1,11 @@
 .product {
-  max-width: 361px;
-  margin-bottom: 31px;
-  width: 100%;
+  width: 361px;
   box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
   border-radius: 4px;
   background-color: #ffffff;
 
-  &__prew {
+  &__prev {
+    display: inline-block;
     height: 230px;
     border-radius: 4px 4px 0 0;
     background-color: #009688;
@@ -20,13 +19,15 @@
   }
 
   &__photo {
-    height: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__mask {
     width: 100%;
     height: 100%;
-    margin-top: -3px;
+    margin-top: -2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,30 +38,21 @@
   &__button {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 23px;
-    background-color: #fff;
     padding: 14px 27px;
-    color: $blue-text;
     font-size: 15px;
     font-weight: 500;
     line-height: 15px;
     margin: 0 5px;
   }
 
-  &__button--mod {
-    padding: 14px 30px;
-    background-color: transparent;
-    border: 1px solid #f4f4f4;
-    color: #fff;
-  }
-
   &__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: inline-block;
+    margin-top: -2px;
   }
 
   &__descr {
-    padding: 30px 30px 11px;
+    height: 237px;
+    padding: 30px 30px 28px;
   }
 
   &__title {
@@ -69,10 +61,20 @@
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   &__user {
     margin-bottom: 0;
+    margin-right: 15px;
     padding: 17px 0 12px;
     object-fit: contain;
   }
@@ -81,6 +83,7 @@
     width: 28px;
     height: 28px;
     margin-right: 8px;
+    background-color: #7347c1;
   }
 
   &__user-name {
@@ -91,12 +94,11 @@
   &__user-work {
     color: #7347c1;
     font-size: 15px;
-    margin-left: 15px;
   }
 
   &__user-note {
     display: inline-block;
-    margin: 0 6px -3px 0;
+    margin: 0 6px -4px 0;
     width: 16px;
     height: 16px;
     background-size: contain;
@@ -108,44 +110,55 @@
     color: $paragraph-text;
     line-height: 30px;
     overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 
   &__param {
-    padding: 15px 30px 14px;
+    padding: 15px 30px 15px;
     display: flex;
     align-items: center;
-    margin-top: 15px;
     border-top: 1px solid #ececec;
   }
 
-  &__value-btn {
-    padding: 8px 18px;
+  &__value {
+    margin-right: 14px;
+    padding: 8px 18px 8px 17px;
     border-radius: 15px;
     background-color: rgba(6, 116, 236, 0.1);
-    font-size: 0;
-    margin-right: 13px;
-  }
-
-  &__value-rate {
-    display: inline-block;
     color: $blue-text;
     font-size: 15px;
     font-weight: 500;
   }
 
+  &__heart {
+    &::before {
+      color: #7347c1;
+      font-size: 15px;
+    }
+  }
+
   &__heart-rate {
-    display: inline-block;
-    margin-right: 15px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 14px 0 6px;
+    padding-bottom: 2px;
     color: $paragraph-text;
     font-size: 15px;
   }
 
   &__cart {
-    display: block;
     margin-left: auto;
+
+    &::before {
+      color: $blue-text;
+      font-size: 15px;
+    }
   }
 
   &__cart-rate {
+    margin-left: 8px;
+    font-family: 'Quicksand', sans-serif;
     color: $blue-text;
     font-size: 15px;
   }
@@ -156,5 +169,13 @@
 
   &__rate--off {
     display: none;
+  }
+
+  &--slider {
+    display: flex;
+  }
+
+  &__info--slider {
+    width: 585px;
   }
 }

@@ -21,6 +21,13 @@
     border: 1px solid #ffffff;
   }
 
+  &--medium {
+    background-color: #f1f3f6;
+    color: #747b86;
+    font-size: 15px;
+    box-shadow: none;
+  }
+
   &:focus {
     box-shadow: 0 0 0 4px $focus;
   }
