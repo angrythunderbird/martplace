@@ -1,5 +1,6 @@
 @import "fonts";
 @import "vars";
+@import "mixins";
 @import "global";
 @import "components/button";
 @import "components/feature";
@@ -9,12 +10,3 @@
 @import "components/section-head";
 @import "components/user";
 @import "index-page";
-
-
-/* del */
-.lnr-magnifier {
-  padding: 0;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-}

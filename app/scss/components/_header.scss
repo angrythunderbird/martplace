@@ -25,9 +25,8 @@
   }
 
   &__info {
+    @include list-reset;
     margin: 0 14px 0 49px;
-    font-size: 0;
-    display: flex;
     justify-content: space-between;
   }
 
@@ -89,8 +88,6 @@
       left: 13px;
       background-color: $blue-text;
     }
-
-
   }
 
   &__user-pic {
@@ -126,7 +123,6 @@
   }
 
   &__form-btn {
-    font-size: 0;
     padding: 0 27px;
     position: absolute;
     top: 0;
@@ -138,10 +134,7 @@
 
 .menu {
   &__list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    @include list-reset;
   }
 
   &__item {
@@ -164,7 +157,6 @@
 
     &:hover {
       color: $hover;
-      /* text-decoration: underline; */
     }
 
     &:active {
