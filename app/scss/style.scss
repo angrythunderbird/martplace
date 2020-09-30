@@ -8,5 +8,12 @@
 @import "components/header";
 @import "components/product";
 @import "components/section-head";
+@import "components/section-title";
 @import "components/user";
 @import "index-page";
+
+.space {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
