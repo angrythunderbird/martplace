@@ -1,0 +1,25 @@
+.join {
+  &__wrapper {
+    padding: 110px 0;
+    background-color: #151a20;
+    opacity: 0.9;
+    text-align: center;
+  }
+
+  &__head {
+    color: #ffffff;
+    font-size: 36px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    color: #e7e7e7;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  &__btn {
+    display: inline-block;
+   padding: 20px 43px 20px;
+  }
+}

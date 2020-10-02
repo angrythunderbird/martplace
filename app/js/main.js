@@ -39,4 +39,13 @@ $(function () {
       prevEl: '.followers__toleft',
     },
   });
+
+  var swiper = new Swiper('.feedback__slider', {
+    slidesPerView: 2,
+    spaceBetween: 29,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 });

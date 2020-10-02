@@ -4,6 +4,8 @@
   flex-wrap: wrap;
 
   &__item {
+    margin-left: -2px;
+    margin-right: -2px;
     background-color: #fff;
     max-width: 361px;
     padding: 6px 34px 41px;
