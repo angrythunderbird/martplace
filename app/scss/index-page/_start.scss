@@ -2,7 +2,7 @@
 
   &__items {
     max-height: 561px;
-    justify-content: center;
+    margin: 0;
     flex-wrap: nowrap;
 
   }
@@ -10,7 +10,7 @@
   &__item {
     margin: 0;
     padding: 0;
-    min-width: 49.8vw;
+    width: 100%;
     flex-basis: 50%;
     height: 100%;
     padding: 100px 0 120px 0;

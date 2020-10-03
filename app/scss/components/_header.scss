@@ -129,6 +129,14 @@
     right: 0;
     height: 46px;
     border-radius: 23px;
+
+    &:hover {
+      .form__magnifier {
+        &::before {
+          color: $blue-text;
+        }
+      }
+    }
   }
 }
 
@@ -150,22 +158,19 @@
     transition: all 0.3s;
 
     &:focus {
-      font-weight: 700;
-      color: $active;
-      text-decoration: underline;
+      color: $blue-text;
     }
 
     &:hover {
-      color: $hover;
+      color: $blue-text;
     }
 
     &:active {
-      color: $active;
+      color: $blue-text
     }
 
     &--active {
-      font-weight: 700;
-      color: $hover;
+      color: $blue-text;
     }
   }
 }

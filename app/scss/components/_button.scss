@@ -8,7 +8,7 @@
   border-radius: 28px;
   color: #ffffff;
   cursor: pointer;
-  transition: box-shadow 0.3s;
+  transition: all 0.3s;
 
   &--white {
     background-color: #fff;
@@ -29,14 +29,42 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 4px $focus;
+    box-shadow: 0 0 0 4px $hover-2;
   }
 
   &:hover {
-    box-shadow: 0 0 0 4px $hover-2;
+    background-color: transparent;
+    box-shadow: 0 0 0 4px $blue-text;
+    color: $blue-text;
   }
 
   &:active {
     box-shadow: inset 0px 4px 4px rgba(247, 243, 0, 0.7);
+    filter: invert(50%);
+  }
+
+  &--white {
+
+    &:hover {
+      background-color: transparent;
+      box-shadow: 0 0 0 4px #fff;
+      color: #fff;
+    }
+  }
+
+  &--transparent {
+
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0 0 0 4px $hover-2;
+      color: $blue-text;
+    }
+  }
+
+  &--medium {
+    background-color: #f1f3f6;
+    color: #747b86;
+    font-size: 15px;
+    box-shadow: none;
   }
 }

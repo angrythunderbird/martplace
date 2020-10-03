@@ -22,6 +22,7 @@
     color: #000000;
     font-size: 24px;
     text-align: center;
+    cursor: pointer;
 
     &--left {
       margin-left: 86px;
@@ -29,6 +30,12 @@
 
     &--right {
       margin-right: 150px;
+    }
+
+    &:hover {
+      .terms__img {
+        filter: invert(100%);
+      }
     }
   }
 
@@ -40,6 +47,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    transition: filter 0.3s;
   }
 
   &__accent {

@@ -17,15 +17,15 @@
     outline: transparent;
 
     &:focus {
-      color: $focus;
+      color: $blue-text;
     }
 
     &:hover {
-      color: $hover;
+      color: $blue-text;
     }
 
     &:active {
-      color: $active;
+      color: $blue-text;
     }
   }
 
@@ -84,14 +84,8 @@
     cursor: pointer;
     transition: color, font-weight 0.3s;
 
-    &:focus {
-      color: $focus;
-      font-weight: 700;
-    }
-
     &:hover {
-      color: $hover;
-      font-weight: 700;
+      color: $blue-text;
     }
   }
 
@@ -117,13 +111,17 @@
   }
 
   &__items {
+    margin-left: -30px;
     margin-bottom: 30px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
   }
 
   &__product {
+
+    flex-basis: calc(33.3333% - 30px);
+    margin-left: 30px;
     margin-bottom: 31px;
   }
 

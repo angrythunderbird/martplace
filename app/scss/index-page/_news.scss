@@ -24,7 +24,6 @@
   }
 
   &__product-title {
-    /* font-size: 22px; */
     line-height: 1.2;
     color: #000000;
     font-size: 22px;
@@ -65,12 +64,36 @@
     margin-left: auto;
     font-family: 'Quicksand', sans-serif;
     color: #7e7e7e;
+
+    &:focus {
+      filter: drop-shadow(2px 4px 6px $blue-text);
+    }
+
+    &:hover {
+      filter: drop-shadow(2px 4px 6px #000);
+    }
+
+    &:active {
+      filter: drop-shadow(2px 4px 6px #000);
+    }
   }
 
   &__views {
     margin-left: 30px;
     font-family: 'Quicksand', sans-serif;
     color: #7e7e7e;
+
+    &:focus {
+      filter: drop-shadow(2px 4px 6px $blue-text);
+    }
+
+    &:hover {
+      filter: drop-shadow(2px 4px 6px #000);
+    }
+
+    &:active {
+      filter: drop-shadow(2px 4px 6px #000);
+    }
   }
 
   &__comments-icon,

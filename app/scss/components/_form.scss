@@ -12,13 +12,14 @@
     width: 100%;
     border: 1px solid #d9dfe5;
     outline: transparent;
+    transition: border-color 0.3s;
 
     &:focus {
-      border-color: $focus;
+      border-color: $blue-text;
     }
 
     &:hover {
-      border-color: $hover;
+      border-color: $blue-text;
     }
   }
 

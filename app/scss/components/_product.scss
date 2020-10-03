@@ -98,6 +98,15 @@
   &__user-work {
     color: #7347c1;
     font-size: 15px;
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: drop-shadow(2px 4px 6px black);
+    }
+
+    &:active {
+      filter: drop-shadow(2px 4px 6px black);
+    }
   }
 
   &__user-note {
@@ -107,6 +116,15 @@
     height: 16px;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: drop-shadow(2px 4px 6px black);
+    }
+
+    &:active {
+      filter: drop-shadow(2px 4px 6px black);
+    }
   }
 
   &__text {
@@ -139,6 +157,18 @@
       color: #7347c1;
       font-size: 15px;
     }
+
+    &:focus {
+      filter: drop-shadow(2px 4px 6px $blue-text);
+    }
+
+    &:hover {
+      filter: drop-shadow(2px 4px 6px #000);
+    }
+
+    &:active {
+      filter: drop-shadow(2px 4px 6px #000);
+    }
   }
 
   &__heart-rate {
@@ -155,6 +185,18 @@
     &::before {
       color: $blue-text;
       font-size: 15px;
+    }
+
+    &:focus {
+      filter: drop-shadow(2px 4px 6px $blue-text);
+    }
+
+    &:hover {
+      filter: drop-shadow(2px 4px 6px black);
+    }
+
+    &:active {
+      filter: drop-shadow(2px 4px 6px black);
     }
   }
 

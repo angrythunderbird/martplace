@@ -25,11 +25,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
-}
 
-.wider {
-  max-width: 100vw;
-  padding: 0 50px;
+  &--wider {
+    max-width: 100vw;
+    padding: 0 50px;
+  }
 }
 
 .logo {
@@ -54,10 +54,12 @@ body {
   display: flex;
 }
 
-.bg-soft-grey {
-  background-color: #eff1f5;
-}
+.bg {
+  &--soft-grey {
+    background-color: #eff1f5;
+  }
 
-.bg-light {
-  background-color: #f6f7fb;
+  &--light {
+    background-color: #f6f7fb;
+  }
 }
